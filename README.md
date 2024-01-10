@@ -41,22 +41,7 @@ data migration and processing tasks.
 - `STG_CUSTOMERS_RS_2`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_RS_3`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_RS_4`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `STG_CUSTOMERS_RS_5`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMERS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_STG_CUSTOMERS_CTE_CUSTOMER_ORDERS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_STG_CUSTOMERS_CTE_ORDERS_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_CUSTOMER_ID_0_50`:
