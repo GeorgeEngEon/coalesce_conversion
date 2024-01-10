@@ -116,6 +116,9 @@ data migration and processing tasks.
 - `STG_UNION_CUST_COUNT`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
+- `STG_UNION_CUST_COUNT_CTE_FINAL_1`:
+        This is a Others node,
+        placeholder descriptions` file in the `nodes/` directory.
 - `STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
