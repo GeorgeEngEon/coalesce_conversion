@@ -1,1 +1,1 @@
-{"INT_ORDERS__PIVOTED_RS-3": {"depends_on_ids": {}}}
+{"STG_ORDERS_BY_MONTH": {"depends_on_ids": {"STG_CUSTOMERS": "d177c19bbb9188449945ba85bdd4e1789dc15d945070851bd17a8ba0dc62c2bd"}}}
