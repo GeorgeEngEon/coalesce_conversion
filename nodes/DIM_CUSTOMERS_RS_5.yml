@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f49da8e013cdfd3815d94fd0bb3275176106d1bb50c168db42afdec1ae697fef
+                  - columnCounter: 3879f07bcd938814363df9c3d6dc797f9c04a5bef9a9914d88ece1e4e463c861
                     stepCounter: c77155d974dae80818fbe27a6b391574d2da5b3cb6b25ced77c4bb683345dceb
                 transform: ""
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 99429b33dee043311dcd29f20cc80ccf96b86ef132cfcac0dd86c42484357a87
+                  - columnCounter: 3879f07bcd938814363df9c3d6dc797f9c04a5bef9a9914d88ece1e4e463c861
                     stepCounter: c77155d974dae80818fbe27a6b391574d2da5b3cb6b25ced77c4bb683345dceb
                 transform: ""
           - acceptedValues:
@@ -114,7 +114,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6faf03250ece34e2f3a1a1bb62f68648b646fd644c11a4ef4ee791f6647602cb
+                  - columnCounter: 3879f07bcd938814363df9c3d6dc797f9c04a5bef9a9914d88ece1e4e463c861
                     stepCounter: c77155d974dae80818fbe27a6b391574d2da5b3cb6b25ced77c4bb683345dceb
                 transform: ""
           - acceptedValues:
@@ -134,7 +134,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 7fa716e1db4537d6dd9a045c31224aca8e87041efadb38ca786a698f40886e5a
+                  - columnCounter: 3879f07bcd938814363df9c3d6dc797f9c04a5bef9a9914d88ece1e4e463c861
                     stepCounter: c77155d974dae80818fbe27a6b391574d2da5b3cb6b25ced77c4bb683345dceb
                 transform: ""
           - acceptedValues:
@@ -154,7 +154,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: b75e4b7c0e78cbae79c28725f5d314e5cda00e99c91505e573bcc3e119a163c0
+                  - columnCounter: 3879f07bcd938814363df9c3d6dc797f9c04a5bef9a9914d88ece1e4e463c861
                     stepCounter: c77155d974dae80818fbe27a6b391574d2da5b3cb6b25ced77c4bb683345dceb
                 transform: ""
         enabledColumnTestIDs: []

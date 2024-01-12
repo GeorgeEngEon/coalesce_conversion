@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 168c8c4ad5e36c1f8ff22a4332a0583db5d2808bc68515873acc2a7bbaadb11a
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: 7588763764884ed91c29af53b2563d4534c55fe4c18e3fd9c73437bd904de775
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: e9c1c152d54c3e5d846993ef7544d109ebbb273f62e988f02b00ce3c51754b8d
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e1a5e3dcdb259d79892cb0cb0efeece0c0cb7a40afbdca49411821e986a7e3d5
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: 3a907fa5b2e6d4bd53756ecd8488b747f5c00f2116d315cdaec9c8717ce85c08
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -94,8 +94,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: e9c1c152d54c3e5d846993ef7544d109ebbb273f62e988f02b00ce3c51754b8d
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -114,8 +114,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: e9c1c152d54c3e5d846993ef7544d109ebbb273f62e988f02b00ce3c51754b8d
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -134,8 +134,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: e9c1c152d54c3e5d846993ef7544d109ebbb273f62e988f02b00ce3c51754b8d
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -154,8 +154,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ad86dc7f271b0c464d378579c2b60a0f3ec54d3b78b7000fc35a7876efd97e8d
-                    stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
+                  - columnCounter: e9c1c152d54c3e5d846993ef7544d109ebbb273f62e988f02b00ce3c51754b8d
+                    stepCounter: 78147b5254795a4896db66a8b25db4f6b1adc294a0e76ed03d6c56575ed9da31
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -163,9 +163,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: RS-1
+                nodeName: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'RS-1') }} "RS-1"
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1"
             name: DIM_CUSTOMERS_RS_4
             noLinkRefs: []
       name: DIM_CUSTOMERS_RS_4

@@ -1,0 +1,136 @@
+steps:
+  INT_ORDERS__PIVOTED_RS_2-3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DBT_GGITHIRI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: cd6eedb5ad321026b9dd8baff68bb34d40d8c2f78a15e4961e7cbc5ee8d8d770
+              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BANK_TRANSFER_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 00d6951a6bcbaca73a7e15715a4601f23fafc9cce6d88c34860d00d3ae8fc47c
+              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUPON_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                transform: sum( case when payment_method = 'coupon' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 6fbae01b20b25bc6cbc53ae9a4d9d1c2b143fc13bc1f4b11ba396912b5fdfb07
+              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CREDIT_CARD_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e8b687d50d4620f85125c9ecbaf9fe547ce1ffc28a559fc5242f26c8457849e8
+              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GIFT_CARD_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 82f058a9ba75df6a1464aaa755b739f97a435cfb69e8399137583ad9ce26f805
+              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DBT_GGITHIRI
+                nodeName: RS-1
+            join:
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'RS-1') }} "RS-1"
+            name: INT_ORDERS__PIVOTED_RS_2
+            noLinkRefs: []
+      name: INT_ORDERS__PIVOTED_RS_2
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d

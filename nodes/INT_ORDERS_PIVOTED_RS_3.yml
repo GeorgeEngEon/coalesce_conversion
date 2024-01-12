@@ -1,5 +1,5 @@
 steps:
-  DIM_CUSTOMERS_RS_3-125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f:
+  INT_ORDERS__PIVOTED_RS_3-d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,19 +24,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 76fad5989f0cc6a39d37cb6c41c02b4041134eb354a897dec4c70119116325e4
-              stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+              columnCounter: 6fc1b9d1cf6757e4d2a1506ebb9cf77b5adaa7721fa2c40e4337823beeec94fc
+              stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: FIRST_ORDER_DATE
+            name: BANK_TRANSFER_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5de7442476724f39a01b188d2597726138a2907e7ad5d1bef10610e6ef9ed90e
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
-                transform: min(order_date)
+                  - columnCounter: c5466db0e28ead2af346d6ed6cbb7b421fe617a0f14bd2cdde7f9723cad2622a
+                    stepCounter: 8f9a21573784ea90f1433e7a26d261889748538d1e77e17d0ff931d4652909f7
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -44,19 +44,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: ceaf15955b6dfb4e658984558e698ab46e82d4dd4552387a62d3af0a60713fd3
-              stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+              columnCounter: 2bc1bcfe0fae5eb75547f78e9defc29ebfcb61395e6f57fbb3017de326ca58c9
+              stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: LIFETIME_VALUE
+            name: COUPON_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5de7442476724f39a01b188d2597726138a2907e7ad5d1bef10610e6ef9ed90e
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
-                transform: sum(amount)
+                  - columnCounter: c5466db0e28ead2af346d6ed6cbb7b421fe617a0f14bd2cdde7f9723cad2622a
+                    stepCounter: 8f9a21573784ea90f1433e7a26d261889748538d1e77e17d0ff931d4652909f7
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -64,19 +64,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 2fb73f7452a92f74fabaf7d03771914952c74d0f6b5ec24a632320293cd42aaa
-              stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+              columnCounter: 154ca95772f38d1f8c59eb98927a686a404005be1a413c8e1d717a3c2119b4f0
+              stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: MOST_RECENT_ORDER_DATE
+            name: CREDIT_CARD_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5de7442476724f39a01b188d2597726138a2907e7ad5d1bef10610e6ef9ed90e
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
-                transform: max(order_date)
+                  - columnCounter: c5466db0e28ead2af346d6ed6cbb7b421fe617a0f14bd2cdde7f9723cad2622a
+                    stepCounter: 8f9a21573784ea90f1433e7a26d261889748538d1e77e17d0ff931d4652909f7
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -84,19 +84,19 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c5baf0bd3512189fa0d0ae79c4c9bee59cf44b1a8e4fd497da27fc444deb4c15
-              stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+              columnCounter: bfcef9a0e7a6536099eff5489bbae8ad49ff936051d8ea678d8ed0334097f515
+              stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: NUMBER_OF_ORDERS
+            name: GIFT_CARD_A
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5de7442476724f39a01b188d2597726138a2907e7ad5d1bef10610e6ef9ed90e
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
-                transform: count(order_id)
+                  - columnCounter: c5466db0e28ead2af346d6ed6cbb7b421fe617a0f14bd2cdde7f9723cad2622a
+                    stepCounter: 8f9a21573784ea90f1433e7a26d261889748538d1e77e17d0ff931d4652909f7
+                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
@@ -104,18 +104,18 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: fa7f2ff18ec71d8361a3576121abf3aab480b265891248a5ddcd37c80a132b32
-              stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+              columnCounter: 655534ffa03e68d09f9117efebd046e35351e2fec80dc583cfb3ceb06df3147b
+              stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
             dataType: ""
             description: ""
             hashColumns: []
             hashDetails: null
-            name: USER_ID
+            name: ORDER_ID
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 5de7442476724f39a01b188d2597726138a2907e7ad5d1bef10610e6ef9ed90e
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                  - columnCounter: c5466db0e28ead2af346d6ed6cbb7b421fe617a0f14bd2cdde7f9723cad2622a
+                    stepCounter: 8f9a21573784ea90f1433e7a26d261889748538d1e77e17d0ff931d4652909f7
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -123,14 +123,14 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: DIM_CUSTOMERS_CTE_ORDERS_DIM_1
+                nodeName: INT_ORDERS__PIVOTED_CTE_FINAL_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_CTE_ORDERS_DIM_1') }} "DIM_CUSTOMERS_CTE_ORDERS_DIM_1"
-            name: DIM_CUSTOMERS_RS_3
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'INT_ORDERS__PIVOTED_CTE_FINAL_1') }} "INT_ORDERS__PIVOTED_CTE_FINAL_1"
+            name: INT_ORDERS__PIVOTED_RS_3
             noLinkRefs: []
-      name: DIM_CUSTOMERS_RS_3
+      name: INT_ORDERS__PIVOTED_RS_3
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+    stepCounter: d99086ba26ef388f83ed0d47ed1d6226bb425447f71dc84c0eb15d4f75126da1
