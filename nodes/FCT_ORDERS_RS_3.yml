@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 788aab9d25cb4600c8c13e79e8ad185bbbbe9db444c80e049c260ba89ba17e7a
-                    stepCounter: 3a41b20df46e7594ab33bfce8019696991af4c131e84d71e619c308b47c18077
+                  - columnCounter: c41b5b9f342be863b8d9b9bb5e70946380abb33b6a3111c0adb0e086a78e8826
+                    stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
                 transform: sum(case when status = 'success' then amount end)
           - acceptedValues:
               strictMatch: true
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 788aab9d25cb4600c8c13e79e8ad185bbbbe9db444c80e049c260ba89ba17e7a
-                    stepCounter: 3a41b20df46e7594ab33bfce8019696991af4c131e84d71e619c308b47c18077
+                  - columnCounter: c41b5b9f342be863b8d9b9bb5e70946380abb33b6a3111c0adb0e086a78e8826
+                    stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -63,9 +63,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: FCT_ORDERS_CTE_PAYMENTS_FCT_1
+                nodeName: FCT_ORDERS_CTE_ORDERS_FCT_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_PAYMENTS_FCT_1"
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDERS_FCT_1') }} "FCT_ORDERS_CTE_ORDERS_FCT_1"
             name: FCT_ORDERS_RS_3
             noLinkRefs: []
       name: FCT_ORDERS_RS_3
