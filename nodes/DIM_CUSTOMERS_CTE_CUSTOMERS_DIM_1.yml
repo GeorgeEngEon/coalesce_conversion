@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 055965237bbe79b25b1dd7b73c6e987cb7546a98da4efa337f58f2d19d6a4448
+                  - columnCounter: a924407b8e55a36e4332990c2e4c90ef26458e9556be467520952e6b77cfc2c7
                     stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
                 transform: ""
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 055965237bbe79b25b1dd7b73c6e987cb7546a98da4efa337f58f2d19d6a4448
+                  - columnCounter: ad86dc7f271b0c464d378579c2b60a0f3ec54d3b78b7000fc35a7876efd97e8d
                     stepCounter: 768f34feddbcd96a1e42535d8fdf39dd6b95c341eb4750da9f25c74220258355
                 transform: ""
         enabledColumnTestIDs: []

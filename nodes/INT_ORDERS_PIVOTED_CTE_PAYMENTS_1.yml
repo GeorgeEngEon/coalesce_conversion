@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                  - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
                 transform: ""
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                  - columnCounter: 6e989291a7937085691a941c8c67f543d7861bc994a5f3dea14a5087b3f6876c
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
                 transform: ""
           - acceptedValues:
@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e4d0b8948176b907ba54f0422754f59dde24189244bf6406c4052b5af9516009
+                  - columnCounter: 172646fe412c6aebffa418d0cdc311311fb74e6df419dcd6e55112670409dcb5
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
                 transform: ""
         enabledColumnTestIDs: []
