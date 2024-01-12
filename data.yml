@@ -26,45 +26,6 @@ locations:
         database: ''
         schema: ''
 macros:
-  macro-expression_is_true:
-    id: expression_is_true
-    macroString: |-
-      {% macro expression_is_true(node, expression, column_name=None) %}
-      
-      SELECT
-          *
-      FROM {{ node }}
-      {% if column_name is none %}
-      WHERE NOT ({{ expression }})
-      {%- else %}
-      WHERE NOT ({{ column_name }} {{ expression }})
-      {%- endif %}
-      
-      {% endmacro %}
-  macro-not_empty_string:
-    id: not_empty_string
-    macroString: |-
-      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
-      
-      WITH all_values AS (
-          SELECT
-              {% if trim_whitespace %}
-                  TRIM({{ column_name }}) AS {{ column_name }}
-              {% else %}
-                  {{ column_name }}
-              {% endif %}
-          FROM {{ node }}
-      ),
-      
-      errors AS (
-          SELECT *
-          FROM all_values
-          WHERE {{ column_name }} = ''
-      )
-      
-      SELECT * FROM errors
-      
-      {% endmacro %}
   macro-equal_rowcount:
     id: equal_rowcount
     macroString: |-
@@ -124,77 +85,45 @@ macros:
       select * from final
       
       {% endmacro %}
-  macro-cents_to_dollars:
-    id: cents_to_dollars
+  macro-expression_is_true:
+    id: expression_is_true
     macroString: |-
-      {% macro cents_to_dollars(column_name, decimal_places=2) -%}
-          round( 1.0 * {{ column_name }} / 100, {{ decimal_places }})
-      {%- endmacro %}
-  macro-clean_stale_models:
-    id: clean_stale_models
+      {% macro expression_is_true(node, expression, column_name=None) %}
+      
+      SELECT
+          *
+      FROM {{ node }}
+      {% if column_name is none %}
+      WHERE NOT ({{ expression }})
+      {%- else %}
+      WHERE NOT ({{ column_name }} {{ expression }})
+      {%- endif %}
+      
+      {% endmacro %}
+  macro-not_empty_string:
+    id: not_empty_string
     macroString: |-
-      {% macro clean_stale_models(database=target.database, schema=target.schema, days=7, dry_run=True) %}
-          
-          {% set get_drop_commands_query %}
-              select
-                  case 
-                      when table_type = 'VIEW'
-                          then table_type
-                      else 
-                          'TABLE'
-                  end as drop_type, 
-                  'DROP ' || drop_type || ' {{ database | upper }}.' || table_schema || '.' || table_name || ';'
-              from {{ database }}.information_schema.tables 
-              where table_schema = upper('{{ schema }}')
-              and last_altered <= current_date - {{ days }} 
-          {% endset %}
+      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
       
-          {{ log('\nGenerating cleanup queries...\n', info=True) }}
-          {% set drop_queries = run_query(get_drop_commands_query).columns[1].values() %}
-      
-          {% for query in drop_queries %}
-              {% if dry_run %}
-                  {{ log(query, info=True) }}
+      WITH all_values AS (
+          SELECT
+              {% if trim_whitespace %}
+                  TRIM({{ column_name }}) AS {{ column_name }}
               {% else %}
-                  {{ log('Dropping object with command: ' ~ query, info=True) }}
-                  {% do run_query(query) %} 
-              {% endif %}       
-          {% endfor %}
-          
-      {% endmacro %}
-  macro-grant_select:
-    id: grant_select
-    macroString: |-
-      {% macro grant_select(schema=target.schema, role=target.role) %}
+                  {{ column_name }}
+              {% endif %}
+          FROM {{ node }}
+      ),
       
-          {% set sql %}
-              grant usage on schema {{ schema }} to role {{ role }};
-              grant select on all tables in schema {{ schema }} to role {{ role }};
-              grant select on all views in schema {{ schema }} to role {{ role }};
-          {% endset %}
+      errors AS (
+          SELECT *
+          FROM all_values
+          WHERE {{ column_name }} = ''
+      )
       
-          {{ log('Granting select on all tables and views in schema ' ~ target.schema ~ ' to role ' ~ role, info=True) }}
-          {% do run_query(sql) %}
-          {{ log('Privileges granted', info=True) }}
+      SELECT * FROM errors
       
       {% endmacro %}
-  macro-log_results_csv:
-    id: log_results_csv
-    macroString: |-
-      {% macro log_results_csv() -%}
-      
-          {% if execute %}
-        			{%- do log("Logging sources csv", true) -%}
-              {{ dbt_readme_logger.log_sources(graph) }}
-      
-              {% do log("Logging seeds csv", true) %}
-              {{ dbt_readme_logger.log_seeds(graph) }}
-      
-              {% do log("Logging models csv", true) %}
-              {{ dbt_readme_logger.log_models(graph) }}
-          {% endif %}
-        
-      {%- endmacro %}
 packages: {}
 projects: {}
 stepTypes:
