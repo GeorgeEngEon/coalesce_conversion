@@ -1,5 +1,5 @@
 steps:
-  FCT_ORDERS_CTE_ORDERS_FCT_1-858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5:
+  FCT_ORDERS_CTE_ORDERS_FCT_1-2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 5abb74f5192678bf2945cb45c7543ef314c103991267cbb68509f17d90e4a486
-              stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
+              columnCounter: 83cd7c3c423c94cf82e1cfe46109375698096ebfb10b6a70cdb7bd9d5b0c22ac
+              stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 21feaa4f5b64e488152986784d78752fb2b6fb61e5634575037be02d34681248
-                    stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
+                  - columnCounter: 8c3effb2a892ad2da98b310a47cfffbb73e60391800716ba1ade2196a26c1447
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: ff3e4dd49e685de8a292fcdb223af2582f360deff50ca4aabba14a4b367ce576
-              stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
+              columnCounter: 3888ea111ae5a1952f399ec2a2acb233b47de9c8c6716dc69aaa7f1705ceb05a
+              stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8abdac9265b1cc3644371b823dd11945cf01b826b36078b01038e3cc2be04555
-                    stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
+                  - columnCounter: 3b2f176c13ce65f02891239d31057d7406e0693424a20c73f1ee9431b553b52b
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 42597aa56c47d6c87cb0617a9a9f65177720af6682b38708a06e1ff3266f2801
-              stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
+              columnCounter: a731f3e652b343a16df069c6cbb3916c9cbfc22fae88ae20aca0a02dc6fd6206
+              stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d3af21e973fcb06d0f5d7195ef51541f27a9a18718b4250721ad8c2c13aa1416
-                    stepCounter: 8e2ab271baabf88f42bf431e5830683386862f6895c1dc237c9c7a46263f2326
+                  - columnCounter: 3bd44d43c02e93c4fdc9d6d8d2493317830e8ea0691002897f523fc7347970e2
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -93,4 +93,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 858270e2fed0d6e20099c88e762bd982807aa77e881e579dbaadfc623ae90eb5
+    stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7

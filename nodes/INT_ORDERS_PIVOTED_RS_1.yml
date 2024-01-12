@@ -1,5 +1,5 @@
 steps:
-  INT_ORDERS__PIVOTED_RS_1-0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337:
+  INT_ORDERS__PIVOTED_RS_1-4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9:
     operation:
       config:
         insertStrategy: INSERT
@@ -24,8 +24,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 8006ad26a9d99f6df3c8a5c0711172c66d53603eb1523e283aeafecd0f6d14be
-              stepCounter: 0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337
+              columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
+              stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +34,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d9c3c5fd3fe82b5918a345d1ec3436ed067624392f6813abc6d94aee0d121205
-                    stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
+                  - columnCounter: 0c98a45bf9844c387708fdaa7b00811a38e514a80d881bbc3d06380259c6de8f
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +44,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: af26a2d1f63178c88abae3d93ce4bce555175defeef0eb2a8cd5901e2d7944fd
-              stepCounter: 0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337
+              columnCounter: 6e989291a7937085691a941c8c67f543d7861bc994a5f3dea14a5087b3f6876c
+              stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +54,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 091a47b16670ed8b892bf5e2c7457526ebef32f7deea59ff6c0e92e959139f2c
-                    stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
+                  - columnCounter: 4bc09b6f8ae6e9d687a981349db35d49852a3fe6e432a5d8d9d7e120e24c99f0
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +64,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 4758c389777bae212e4cae05db01ae0242e871afab16741bae44465090609e73
-              stepCounter: 0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337
+              columnCounter: 172646fe412c6aebffa418d0cdc311311fb74e6df419dcd6e55112670409dcb5
+              stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f1ffdd0a740a9221114ba4bd618a06df6f68d0f297714dcb4c1e8334a2853294
-                    stepCounter: c0641b1c47f16ae0224f47fafcecbc0fcbed3b5deca0dfcf8446ef3057f15e75
+                  - columnCounter: 42b0db802bb0b4779119b533041ea0ddbacd8d17ebdab87259b4d44273e29447
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -93,4 +93,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 0197bbb384da8438b21bbbc5bf9dff81496493c1dd97b2a9d6037aa14eba4337
+    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
