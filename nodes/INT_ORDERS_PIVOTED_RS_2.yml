@@ -35,7 +35,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                    stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -55,7 +55,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                    stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -75,7 +75,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                    stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -95,7 +95,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                    stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -114,8 +114,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6e989291a7937085691a941c8c67f543d7861bc994a5f3dea14a5087b3f6876c
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: 772ff3b36f176ed6cf6dbeb75f170064f1417959ce51c6920d352d7544c663ba
+                    stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -123,9 +123,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: RS-1
+                nodeName: INT_ORDERS__PIVOTED_CTE_PAYMENTS_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'RS-1') }} "RS-1"
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'INT_ORDERS__PIVOTED_CTE_PAYMENTS_1') }} "INT_ORDERS__PIVOTED_CTE_PAYMENTS_1"
             name: INT_ORDERS__PIVOTED_RS_2
             noLinkRefs: []
       name: INT_ORDERS__PIVOTED_RS_2
