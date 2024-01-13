@@ -85,21 +85,6 @@ macros:
       select * from final
       
       {% endmacro %}
-  macro-expression_is_true:
-    id: expression_is_true
-    macroString: |-
-      {% macro expression_is_true(node, expression, column_name=None) %}
-      
-      SELECT
-          *
-      FROM {{ node }}
-      {% if column_name is none %}
-      WHERE NOT ({{ expression }})
-      {%- else %}
-      WHERE NOT ({{ column_name }} {{ expression }})
-      {%- endif %}
-      
-      {% endmacro %}
   macro-not_empty_string:
     id: not_empty_string
     macroString: |-
@@ -122,6 +107,21 @@ macros:
       )
       
       SELECT * FROM errors
+      
+      {% endmacro %}
+  macro-expression_is_true:
+    id: expression_is_true
+    macroString: |-
+      {% macro expression_is_true(node, expression, column_name=None) %}
+      
+      SELECT
+          *
+      FROM {{ node }}
+      {% if column_name is none %}
+      WHERE NOT ({{ expression }})
+      {%- else %}
+      WHERE NOT ({{ column_name }} {{ expression }})
+      {%- endif %}
       
       {% endmacro %}
   macro-cents_to_dollars:
