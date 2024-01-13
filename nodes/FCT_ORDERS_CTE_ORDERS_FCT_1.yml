@@ -83,12 +83,12 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: FCT_ORDERS_CTE_ORDERS_FCT_1
+                nodeName: STG_ORDERS
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDERS_FCT_1') }} "FCT_ORDERS_CTE_ORDERS_FCT_1"
-            name: FCT_ORDERS_RS_1
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'STG_ORDERS') }} "STG_ORDERS"
+            name: FCT_ORDERS_CTE_ORDERS_FCT_1
             noLinkRefs: []
-      name: FCT_ORDERS_RS_1
+      name: FCT_ORDERS_CTE_ORDERS_FCT_1
       overrideSQL: false
       schema: ""
       sqlType: Stage

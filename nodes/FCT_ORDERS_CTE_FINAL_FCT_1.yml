@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: 
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -102,13 +102,13 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: 
-                nodeName: FCT_ORDERS_CTE_FINAL_FCT_1
+              - locationName: DBT_GGITHIRI
+                nodeName: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
             join:
-                joinCondition: FROM {{ ref('', 'FCT_ORDERS_CTE_FINAL_FCT_1') }} "FCT_ORDERS_CTE_FINAL_FCT_1"
-            name: FCT_ORDERS_RS_4
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1"
+            name: FCT_ORDERS_CTE_FINAL_FCT_1
             noLinkRefs: []
-      name: FCT_ORDERS_RS_4
+      name: FCT_ORDERS_CTE_FINAL_FCT_1
       overrideSQL: false
       schema: ""
       sqlType: Stage

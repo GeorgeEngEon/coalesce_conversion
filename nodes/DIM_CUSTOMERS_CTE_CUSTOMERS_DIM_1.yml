@@ -103,12 +103,12 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
+                nodeName: STG_CUSTOMERS
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1"
-            name: DIM_CUSTOMERS_RS_1
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'STG_CUSTOMERS') }} "STG_CUSTOMERS"
+            name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
             noLinkRefs: []
-      name: DIM_CUSTOMERS_RS_1
+      name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
