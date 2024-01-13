@@ -26,21 +26,6 @@ data migration and processing tasks.
 - `DIM_CUSTOMERS_CTE_ORDERS_DIM_1`:
         This is a dimension node,
         placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_RS_1`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_RS_2`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_RS_3`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_RS_4`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_RS_5`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `FCT_ORDERS`:
         This is a fact node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -56,21 +41,6 @@ data migration and processing tasks.
 - `FCT_ORDERS_CTE_PAYMENTS_FCT_1`:
         This is a fact node,
         placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_RS_1`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_RS_2`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_RS_3`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_RS_4`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_RS_5`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `INT_ORDERS_PIVOTED`:
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -78,15 +48,6 @@ data migration and processing tasks.
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
 - `INT_ORDERS_PIVOTED_CTE_PAYMENTS_1`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED_RS_1`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED_RS_2`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED_RS_3`:
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
 - `JAFFLE_SHOP_CUSTOMERS`:
