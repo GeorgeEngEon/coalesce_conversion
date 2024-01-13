@@ -169,9 +169,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: DIM_CUSTOMERS_RS_3
+                nodeName: DIM_CUSTOMERS_CTE_FINAL_DIM_1
             join:
-              joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_RS_3') }} "DIM_CUSTOMERS_RS_3"
+              joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_CTE_FINAL_DIM_1') }} "DIM_CUSTOMERS_CTE_FINAL_DIM_1"
               name: DIM_CUSTOMERS
               noLinkRefs: []
       name: DIM_CUSTOMERS

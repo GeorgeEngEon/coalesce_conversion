@@ -41,6 +41,30 @@ macros:
       {%- endif %}
       
       {% endmacro %}
+  macro-not_empty_string:
+    id: not_empty_string
+    macroString: |-
+      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
+      
+      WITH all_values AS (
+          SELECT
+              {% if trim_whitespace %}
+                  TRIM({{ column_name }}) AS {{ column_name }}
+              {% else %}
+                  {{ column_name }}
+              {% endif %}
+          FROM {{ node }}
+      ),
+      
+      errors AS (
+          SELECT *
+          FROM all_values
+          WHERE {{ column_name }} = ''
+      )
+      
+      SELECT * FROM errors
+      
+      {% endmacro %}
   macro-equal_rowcount:
     id: equal_rowcount
     macroString: |-
@@ -98,30 +122,6 @@ macros:
           {{ join_gb_cols }}
       )
       select * from final
-      
-      {% endmacro %}
-  macro-not_empty_string:
-    id: not_empty_string
-    macroString: |-
-      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
-      
-      WITH all_values AS (
-          SELECT
-              {% if trim_whitespace %}
-                  TRIM({{ column_name }}) AS {{ column_name }}
-              {% else %}
-                  {{ column_name }}
-              {% endif %}
-          FROM {{ node }}
-      ),
-      
-      errors AS (
-          SELECT *
-          FROM all_values
-          WHERE {{ column_name }} = ''
-      )
-      
-      SELECT * FROM errors
       
       {% endmacro %}
   macro-cents_to_dollars:
