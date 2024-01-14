@@ -12,7 +12,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: 
+      locationName: BI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -82,10 +82,10 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: 
+              - locationName: BI
                 nodeName: STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1
             join:
-                joinCondition: FROM {{ ref('', 'STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1') }} "STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1"
+                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1') }} "STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1"
             name: STG_ORDERS_BY_MONTH_CTE_FINAL_1
             noLinkRefs: []
       name: STG_ORDERS_BY_MONTH_CTE_FINAL_1
