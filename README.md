@@ -11,45 +11,6 @@ data migration and processing tasks.
 
 ## :file_folder: Migrated Tables/Views  :
 
-- `DIM_CUSTOMERS`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_CTE_FINAL_DIM_1`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `DIM_CUSTOMERS_CTE_ORDERS_DIM_1`:
-        This is a dimension node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_CTE_FINAL_FCT_1`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_CTE_ORDERS_FCT_1`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `FCT_ORDERS_CTE_PAYMENTS_FCT_1`:
-        This is a fact node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED_CTE_FINAL_1`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS_PIVOTED_CTE_PAYMENTS_1`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `JAFFLE_SHOP_CUSTOMERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -89,9 +50,6 @@ data migration and processing tasks.
 - `STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
-- `STG_ORDERS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `STG_ORDERS_BY_MONTH`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -99,9 +57,6 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_PAYMENTS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_UNION_CUST_COUNT`:
@@ -114,9 +69,6 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_UNION_CUST_COUNT_CTE_USER_LT_51_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STRIPE_PAYMENT`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
     ## :book: Node Types in `data.yml` :book:
