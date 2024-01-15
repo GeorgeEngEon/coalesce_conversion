@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d843fc766d805368ad37b2d3dead33e7b84eaadf0823f4111b12bb41fcc35d47
+                  - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: min(order_date)
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d843fc766d805368ad37b2d3dead33e7b84eaadf0823f4111b12bb41fcc35d47
+                  - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: sum(amount)
           - acceptedValues:
@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d843fc766d805368ad37b2d3dead33e7b84eaadf0823f4111b12bb41fcc35d47
+                  - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: max(order_date)
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d843fc766d805368ad37b2d3dead33e7b84eaadf0823f4111b12bb41fcc35d47
+                  - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: count(order_id)
           - acceptedValues:
@@ -114,7 +114,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: d843fc766d805368ad37b2d3dead33e7b84eaadf0823f4111b12bb41fcc35d47
+                  - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: ""
         enabledColumnTestIDs: []
