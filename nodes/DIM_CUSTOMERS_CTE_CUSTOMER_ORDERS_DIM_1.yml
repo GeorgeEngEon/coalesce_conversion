@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 48622125ff744f5f8744c76b53c90813006e476bb11e629cbe544b51d7e45a08
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: min(order_date)
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 48622125ff744f5f8744c76b53c90813006e476bb11e629cbe544b51d7e45a08
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: sum(amount)
           - acceptedValues:
@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 48622125ff744f5f8744c76b53c90813006e476bb11e629cbe544b51d7e45a08
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: max(order_date)
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 48622125ff744f5f8744c76b53c90813006e476bb11e629cbe544b51d7e45a08
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: count(order_id)
           - acceptedValues:
@@ -114,7 +114,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 48622125ff744f5f8744c76b53c90813006e476bb11e629cbe544b51d7e45a08
                     stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
                 transform: ""
         enabledColumnTestIDs: []

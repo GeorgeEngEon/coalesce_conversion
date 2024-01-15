@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: 83cd7c3c423c94cf82e1cfe46109375698096ebfb10b6a70cdb7bd9d5b0c22ac
                     stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
                 transform: ""
           - acceptedValues:

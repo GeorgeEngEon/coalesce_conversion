@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: ecaf989311f0b1d145e8d09ef6ebadead32f18a35298fbb81ca4479a7ef12d65
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: ecaf989311f0b1d145e8d09ef6ebadead32f18a35298fbb81ca4479a7ef12d65
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: ecaf989311f0b1d145e8d09ef6ebadead32f18a35298fbb81ca4479a7ef12d65
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: ecaf989311f0b1d145e8d09ef6ebadead32f18a35298fbb81ca4479a7ef12d65
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
