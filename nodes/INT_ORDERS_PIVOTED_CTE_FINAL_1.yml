@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 581906560c2b790bfd4ada1c6ed181c1a0663f7e8a58ab3e27409019891bf35d
+                  - columnCounter: None
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 581906560c2b790bfd4ada1c6ed181c1a0663f7e8a58ab3e27409019891bf35d
+                  - columnCounter: None
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
@@ -74,7 +74,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 581906560c2b790bfd4ada1c6ed181c1a0663f7e8a58ab3e27409019891bf35d
+                  - columnCounter: None
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
@@ -94,7 +94,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 581906560c2b790bfd4ada1c6ed181c1a0663f7e8a58ab3e27409019891bf35d
+                  - columnCounter: None
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
@@ -114,7 +114,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 581906560c2b790bfd4ada1c6ed181c1a0663f7e8a58ab3e27409019891bf35d
+                  - columnCounter: 772ff3b36f176ed6cf6dbeb75f170064f1417959ce51c6920d352d7544c663ba
                     stepCounter: ee5aafaaba6856967aa7131442e1ef1c41bb294c987c063c87e5c66d28d9d86d
                 transform: ""
         enabledColumnTestIDs: []
