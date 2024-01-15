@@ -41,12 +41,6 @@ data migration and processing tasks.
 - `FCT_ORDERS_CTE_PAYMENTS_FCT_1`:
         This is a fact node,
         placeholder descriptions` file in the `nodes/` directory.
-- `INT_CUSTOMERS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `INT_ORDERS_PIVOTED`:
         This is a intermediate node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -65,61 +59,10 @@ data migration and processing tasks.
 - `STG_CUSTOMERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_CTE_CUSTOMERS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_CTE_CUSTOMER_ORDERS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_CTE_FINAL_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMERS_CTE_ORDERS_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_0_50`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_0_50_CTE_FINAL_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_0_50_CTE_USER_COUNT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_51_100`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_51_100_CTE_FINAL_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `STG_ORDERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
-- `STG_ORDERS_BY_MONTH`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_ORDERS_BY_MONTH_CTE_FINAL_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `STG_PAYMENTS`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_UNION_CUST_COUNT`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_UNION_CUST_COUNT_CTE_FINAL_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_UNION_CUST_COUNT_CTE_USER_GTEQ_51_1`:
-        This is a Others node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `STG_UNION_CUST_COUNT_CTE_USER_LT_51_1`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STRIPE_PAYMENT`:
