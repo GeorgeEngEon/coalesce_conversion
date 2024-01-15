@@ -35,7 +35,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                    stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
                 transform: min(order_date)
           - acceptedValues:
               strictMatch: true
@@ -55,7 +55,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                    stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
                 transform: sum(amount)
           - acceptedValues:
               strictMatch: true
@@ -75,7 +75,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                    stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
                 transform: max(order_date)
           - acceptedValues:
               strictMatch: true
@@ -95,7 +95,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                    stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
                 transform: count(order_id)
           - acceptedValues:
               strictMatch: true
@@ -115,7 +115,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: df22184a026ae845a8667bbdeff0c2aef5f26195dac14994f965a45730d089b4
-                    stepCounter: 172f4c98c6e916e5f8d3d269ba4eece43335477b4bfa9e01a0b18f375210f7dc
+                    stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
