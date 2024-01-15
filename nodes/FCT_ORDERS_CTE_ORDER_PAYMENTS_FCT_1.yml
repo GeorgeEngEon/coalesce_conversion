@@ -34,7 +34,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: None
+                  - columnCounter: c41b5b9f342be863b8d9b9bb5e70946380abb33b6a3111c0adb0e086a78e8826
                     stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
                 transform: sum(case when status = 'success' then amount end)
           - acceptedValues:
@@ -54,7 +54,7 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: a731f3e652b343a16df069c6cbb3916c9cbfc22fae88ae20aca0a02dc6fd6206
+                  - columnCounter: c41b5b9f342be863b8d9b9bb5e70946380abb33b6a3111c0adb0e086a78e8826
                     stepCounter: 2e5668a30bf0b0bf4a77612476b0be144b4c029a0937edc5d037cf5f93b4f2b7
                 transform: ""
         enabledColumnTestIDs: []
