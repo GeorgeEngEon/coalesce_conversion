@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: string indices must be integers
-                    stepCounter: No Source Step id
+                  - columnCounter: 0d58dae788e341ebaa212844b543c027594bf79c8ceab4c2de6159b1aa4784b7
+                    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: string indices must be integers
-                    stepCounter: No Source Step id
+                  - columnCounter: fa2db5c57c55715afcce85589a88b628aad71289b7f69b67d57ae4829be91793
+                    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: string indices must be integers
-                    stepCounter: No Source Step id
+                  - columnCounter: 1536001f0ca104f58ded64e14258b71a49d579f151d7aa8d0e3a545a3dd5eaac
+                    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -96,8 +96,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: string indices must be integers
-                    stepCounter: No Source Step id
+                  - columnCounter: ae54970fa7055d82969a23968bc234195cd54fb3730db39de2be94c91deca327
+                    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -116,8 +116,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: string indices must be integers
-                    stepCounter: No Source Step id
+                  - columnCounter: 85d90f0c91956ef65b111c142ac37ef21374d7fcbe8197ad23741928b5cb3579
+                    stepCounter: 53b0122a1e825b2d24899dffdf8857c52abba5cf3617a816f22d5afaa49ee7ab
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -125,10 +125,10 @@ steps:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: No Source Model
-                nodeName: No Source Name
+              - locationName: JAFFLE_SHOP
+                nodeName: ORDERS
             join:
-                joinCondition: FROM {{ ref('No Source Model', 'No Source Name') }} "No Source Name"
+                joinCondition: FROM {{ ref('JAFFLE_SHOP', 'ORDERS') }} "ORDERS"
             name: STG_PREP_ORDERS
             noLinkRefs: []
       name: STG_PREP_ORDERS
