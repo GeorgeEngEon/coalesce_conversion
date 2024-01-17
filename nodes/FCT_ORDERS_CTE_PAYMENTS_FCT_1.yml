@@ -1,0 +1,98 @@
+steps:
+  FCT_ORDERS_CTE_PAYMENTS_FCT_1-df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DBT_GGITHIRI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 07bb2399bbc20f8140e428c4bc3373f23c75c27f2acdcf09903c3b69821c8bda
+              stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0c98a45bf9844c387708fdaa7b00811a38e514a80d881bbc3d06380259c6de8f
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 1166c2b4f81a8924dd9be7a2897277daf18eb6bd560cea021918ca7c1ea84566
+              stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4bc09b6f8ae6e9d687a981349db35d49852a3fe6e432a5d8d9d7e120e24c99f0
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2e0178ba1863a88037f5a3a44887a0a88c7b96174f378b48ae7ddc38e5064303
+              stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f0b170fefd8696577ffa1ca07969a82582ab4eaee03a9898697effefe65bb2c3
+                    stepCounter: 1ff4c3587cf735287130e6a54c6b104dd26cb5bfc78a70345fd799ddbddbcbd3
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DBT_GGITHIRI
+                nodeName: STG_PAYMENTS
+            join:
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'STG_PAYMENTS') }} "STG_PAYMENTS"
+            name: FCT_ORDERS_CTE_PAYMENTS_FCT_1
+            noLinkRefs: []
+      name: FCT_ORDERS_CTE_PAYMENTS_FCT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425

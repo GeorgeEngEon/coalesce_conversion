@@ -1,0 +1,101 @@
+steps:
+  FCT_ORDERS_CTE_ORDERS_FCT_1-7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: DBT_GGITHIRI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 8c3effb2a892ad2da98b310a47cfffbb73e60391800716ba1ade2196a26c1447
+              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a5b70ab3e2bea8a7a61b0fdffe94647a4e3e24b2f463f30fb74a0d13e42a64ca
+                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3b2f176c13ce65f02891239d31057d7406e0693424a20c73f1ee9431b553b52b
+              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8a6eaacca32f1fe0cad3acf820372d17e2cdfd3e5a3beef807af0bc05e5a2d9f
+                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3bd44d43c02e93c4fdc9d6d8d2493317830e8ea0691002897f523fc7347970e2
+              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0b1b71fc9f3ccc6d0f1a4516c746d13635eb1f754b40be45922749f53241e149
+                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: DBT_GGITHIRI
+                nodeName: STG_ORDERS
+            join:
+                joinCondition: |-
+                  FROM {{ ref('DBT_GGITHIRI', 'STG_ORDERS') }} "STG_ORDERS"
+                  LEFT JOIN {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1" 
+                  ON "FCT_ORDERS_CTE_ORDERS_FCT_1"."ORDER_ID" = "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1"."ORDER_ID"
+            name: FCT_ORDERS_CTE_ORDERS_FCT_1
+            noLinkRefs: []
+      name: FCT_ORDERS_CTE_ORDERS_FCT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973

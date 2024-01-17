@@ -1,10 +1,12 @@
 steps:
-  STG_CUSTOMERS_CTE_ORDERS_1-dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15:
+  FCT_ORDERS_CTE_FINAL_FCT_1-93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2:
     operation:
       config:
-        insertStrategy: INSERT
+        groupByAll: false
+        insertStrategy: UNION
         postSQL: ""
         preSQL: ""
+        selectDistinct: false
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -12,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: BI
+      locationName: DBT_GGITHIRI
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -24,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 139e27c8f7e80d1154b36ae7820c4110f3665c681477aaa160839306cd37fa2c
-              stepCounter: dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15
+              columnCounter: ff92990d928abea0052aecdf3e1ccf15996794081f5c9315e301b64fb0a198d8
+              stepCounter: 93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2
             dataType: ""
             description: ""
             hashColumns: []
@@ -34,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: cff0db621dc39ba8183e57aab52b0933fa1b134423a1c175ff47523a68e28391
-                    stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
+                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -44,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 25be45ffa15d3c6a2d5fadfa87febe8507c6704ab240b2b1dd58baf013dbba60
-              stepCounter: dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15
+              columnCounter: fd0d04ae4e8fbc4579e67d4eb2a8b92f2035e6343ce38a634b8ebf232a1fa2d6
+              stepCounter: 93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2
             dataType: ""
             description: ""
             hashColumns: []
@@ -54,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 1b1d93bf525e298040cba44a5aade1e36299ac599638401b91ff401df91a6267
-                    stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
+                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -64,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 3513966f7423cb9f4d689068da3fd85c5156c697f6a21d0937fee3bf7290221a
-              stepCounter: dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15
+              columnCounter: 5d4dbad1f0da625cbcf4b9e96f02a6be138a99f187abe289614934ceb482348a
+              stepCounter: 93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2
             dataType: ""
             description: ""
             hashColumns: []
@@ -74,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 7bfbb5c6a0216337252f3fa64870deef4e358bad19a6ba169deb5d1228dcfed1
-                    stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
+                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -84,8 +86,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 97ac1dbc13c9bf8b7194f986a2caeddeb70ab639415c34b159bf392f4def5f28
-              stepCounter: dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15
+              columnCounter: 4c6b8fb2dec715be0caa5a2e6c09df055b56a364c9118812c29f21c6f0189943
+              stepCounter: 93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2
             dataType: ""
             description: ""
             hashColumns: []
@@ -94,23 +96,23 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8f9dd6c6ba0931f3e134858df4c1dbcdbeb0c0c859bc01bad71dafecdb0af062
-                    stepCounter: 9a1f6997075db3ab7ce3ffbecd132e0435b9f19a91573dced62fad07d22583eb
+                  - columnCounter: 58accf71a59a776728f33654ee83ef03a871503822e436c94ba9a16ea7fb4b00
+                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: BI
-                nodeName: INT_ORDERS
+              - locationName: DBT_GGITHIRI
+                nodeName: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
             join:
-                joinCondition: FROM {{ ref('BI', 'INT_ORDERS') }} "INT_ORDERS"
-            name: STG_CUSTOMERS_CTE_ORDERS_1
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1"
+            name: FCT_ORDERS_CTE_FINAL_FCT_1
             noLinkRefs: []
-      name: STG_CUSTOMERS_CTE_ORDERS_1
+      name: FCT_ORDERS_CTE_FINAL_FCT_1
       overrideSQL: false
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: dfafbb41685a3f036458f5efb8a601bcfdb987defa52817e7a97f1b2f219cb15
+    stepCounter: 93a6ea2990442cf0d9c1a429ef144b1350c437277d7d79c7129427dd9ce076a2
