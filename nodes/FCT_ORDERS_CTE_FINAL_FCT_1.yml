@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
-                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+                  - columnCounter: 8c3effb2a892ad2da98b310a47cfffbb73e60391800716ba1ade2196a26c1447
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
-                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+                  - columnCounter: 8c3effb2a892ad2da98b310a47cfffbb73e60391800716ba1ade2196a26c1447
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
-                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+                  - columnCounter: 3b2f176c13ce65f02891239d31057d7406e0693424a20c73f1ee9431b553b52b
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -96,8 +96,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 58accf71a59a776728f33654ee83ef03a871503822e436c94ba9a16ea7fb4b00
-                    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+                  - columnCounter: 3bd44d43c02e93c4fdc9d6d8d2493317830e8ea0691002897f523fc7347970e2
+                    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -105,9 +105,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: DBT_GGITHIRI
-                nodeName: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
+                nodeName: FCT_ORDERS_CTE_ORDERS_FCT_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1"
+                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDERS_FCT_1') }} "FCT_ORDERS_CTE_ORDERS_FCT_1"
             name: FCT_ORDERS_CTE_FINAL_FCT_1
             noLinkRefs: []
       name: FCT_ORDERS_CTE_FINAL_FCT_1
