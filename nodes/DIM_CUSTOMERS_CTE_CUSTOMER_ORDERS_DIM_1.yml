@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 81492d7b96d07e4d6d42b25769a592b06959b29b5cfc72134a1937fd82ef544a
-                    stepCounter: cd91935aa489ddba7d3c6df80336fa56e250a09550b20f8c60bce03b55e00927
+                  - columnCounter: 8d704154570c94dbb6ccef5d28aa98a3a240c25d6b2e0359abcca67707f3f578
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f42085e545342435ea5707a698ef8d47c4f5803034e7da5cb59dbaa398089422
-                    stepCounter: cd91935aa489ddba7d3c6df80336fa56e250a09550b20f8c60bce03b55e00927
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: min(order_date)
           - acceptedValues:
               strictMatch: true
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f42085e545342435ea5707a698ef8d47c4f5803034e7da5cb59dbaa398089422
-                    stepCounter: cd91935aa489ddba7d3c6df80336fa56e250a09550b20f8c60bce03b55e00927
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: sum(amount)
           - acceptedValues:
               strictMatch: true
@@ -96,8 +96,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f42085e545342435ea5707a698ef8d47c4f5803034e7da5cb59dbaa398089422
-                    stepCounter: cd91935aa489ddba7d3c6df80336fa56e250a09550b20f8c60bce03b55e00927
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: max(order_date)
           - acceptedValues:
               strictMatch: true
@@ -116,8 +116,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f42085e545342435ea5707a698ef8d47c4f5803034e7da5cb59dbaa398089422
-                    stepCounter: cd91935aa489ddba7d3c6df80336fa56e250a09550b20f8c60bce03b55e00927
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: count(order_id)
         enabledColumnTestIDs: []
         sourceMapping:
@@ -125,9 +125,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: GEORGE
-                nodeName: DIM_CUSTOMERS_CTE_ORDERS_DIM_1
+                nodeName: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
             join:
-                joinCondition: FROM {{ ref('GEORGE', 'DIM_CUSTOMERS_CTE_ORDERS_DIM_1') }} "DIM_CUSTOMERS_CTE_ORDERS_DIM_1"
+                joinCondition: FROM {{ ref('GEORGE', 'DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1"
             name: DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1
             noLinkRefs: []
       name: DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1

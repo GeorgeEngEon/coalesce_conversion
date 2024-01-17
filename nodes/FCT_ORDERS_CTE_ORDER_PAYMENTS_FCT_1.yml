@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 68606f6bd59edfcd417100e57e1c1a36ec132d63190423090f803f967689d7a3
-                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
+                  - columnCounter: 65b2250132c168612afa20693f3f0ad1bd4c413577dc21ab824873041e77d89e
+                    stepCounter: b38c654f8db4347f35ac95f1cde8a5c785a7de07c7be6b8a554f3d7b73a15ae3
                 transform: sum(case when status = 'success' then amount end)
           - acceptedValues:
               strictMatch: true
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 39834e6772886add64eaf564b520b3caa348c8d8532921d701888e7cd20e8727
-                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
+                  - columnCounter: 9877fd833c4230a2fc01c06c37975f8562574a283815caf412ce0be7e1039fdb
+                    stepCounter: b38c654f8db4347f35ac95f1cde8a5c785a7de07c7be6b8a554f3d7b73a15ae3
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -65,9 +65,9 @@ steps:
               customSQL: ""
             dependencies:
               - locationName: GEORGE
-                nodeName: FCT_ORDERS_CTE_ORDERS_FCT_1
+                nodeName: FCT_ORDERS_CTE_PAYMENTS_FCT_1
             join:
-                joinCondition: FROM {{ ref('GEORGE', 'FCT_ORDERS_CTE_ORDERS_FCT_1') }} "FCT_ORDERS_CTE_ORDERS_FCT_1"
+                joinCondition: FROM {{ ref('GEORGE', 'FCT_ORDERS_CTE_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_PAYMENTS_FCT_1"
             name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
             noLinkRefs: []
       name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1

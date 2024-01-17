@@ -26,28 +26,19 @@ locations:
         database: ''
         schema: ''
 macros:
-  macro-not_empty_string:
-    id: not_empty_string
+  macro-expression_is_true:
+    id: expression_is_true
     macroString: |-
-      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
+      {% macro expression_is_true(node, expression, column_name=None) %}
       
-      WITH all_values AS (
-          SELECT
-              {% if trim_whitespace %}
-                  TRIM({{ column_name }}) AS {{ column_name }}
-              {% else %}
-                  {{ column_name }}
-              {% endif %}
-          FROM {{ node }}
-      ),
-      
-      errors AS (
-          SELECT *
-          FROM all_values
-          WHERE {{ column_name }} = ''
-      )
-      
-      SELECT * FROM errors
+      SELECT
+          *
+      FROM {{ node }}
+      {% if column_name is none %}
+      WHERE NOT ({{ expression }})
+      {%- else %}
+      WHERE NOT ({{ column_name }} {{ expression }})
+      {%- endif %}
       
       {% endmacro %}
   macro-equal_rowcount:
@@ -109,19 +100,28 @@ macros:
       select * from final
       
       {% endmacro %}
-  macro-expression_is_true:
-    id: expression_is_true
+  macro-not_empty_string:
+    id: not_empty_string
     macroString: |-
-      {% macro expression_is_true(node, expression, column_name=None) %}
+      {% macro not_empty_string(node, column_name, trim_whitespace=True) %}
       
-      SELECT
-          *
-      FROM {{ node }}
-      {% if column_name is none %}
-      WHERE NOT ({{ expression }})
-      {%- else %}
-      WHERE NOT ({{ column_name }} {{ expression }})
-      {%- endif %}
+      WITH all_values AS (
+          SELECT
+              {% if trim_whitespace %}
+                  TRIM({{ column_name }}) AS {{ column_name }}
+              {% else %}
+                  {{ column_name }}
+              {% endif %}
+          FROM {{ node }}
+      ),
+      
+      errors AS (
+          SELECT *
+          FROM all_values
+          WHERE {{ column_name }} = ''
+      )
+      
+      SELECT * FROM errors
       
       {% endmacro %}
   macro-cents_to_dollars:
