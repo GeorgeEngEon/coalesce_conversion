@@ -11,12 +11,6 @@ data migration and processing tasks.
 
 ## :file_folder: Migrated Tables/Views  :
 
-- `INT_CUSTOMERS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
-- `INT_ORDERS`:
-        This is a intermediate node,
-        placeholder descriptions` file in the `nodes/` directory.
 - `JAFFLE_SHOP_CUSTOMERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
@@ -63,6 +57,12 @@ data migration and processing tasks.
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_ORDERS_BY_MONTH_CTE_USER_AMOUNT_1`:
+        This is a Others node,
+        placeholder descriptions` file in the `nodes/` directory.
+- `STG_PREP_CUSTOMERS`:
+        This is a Others node,
+        placeholder descriptions` file in the `nodes/` directory.
+- `STG_PREP_ORDERS`:
         This is a Others node,
         placeholder descriptions` file in the `nodes/` directory.
 - `STG_UNION_CUST_COUNT`:

@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH-c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa:
+  STG_ORDERS_BY_MONTH-84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702:
     operation:
       config:
         groupByAll: false
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 381b5e94619e9e49f0efaf6a6da28a1b412f1788b4a9f79bf058b7ee33594bac
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: 93e64ef5bdb034e1232fc67028421862ed790bb801f4c661b21ac18bfd56e2fe
+              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
-                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                  - columnCounter: 6c52deb259a2d6f5a9f7f0fe45b9acbec6f55ba6e49e7b9572166ed83ee55a77
+                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -46,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: ad965620ae700ff804b449fbdc348a371f7d595f80fa569885b9f1e719fa1856
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: a91fee23acf0b54bcae0079893ca447260cb1ce721021bf5288df59d2016ad2d
+              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
-                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                  - columnCounter: 6c52deb259a2d6f5a9f7f0fe45b9acbec6f55ba6e49e7b9572166ed83ee55a77
+                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -66,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 171b65b4ec0cd392aba259f722b376bcf3a445e66ffeff68669bddd6ce6c19c4
-              stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+              columnCounter: 3aa1d9ee86adb1d7900d541e181422172bf3728a3897c9cacb7ca40d7d9a9c44
+              stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
-                    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+                  - columnCounter: 6c52deb259a2d6f5a9f7f0fe45b9acbec6f55ba6e49e7b9572166ed83ee55a77
+                    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
                 transform: ""
         cteString: ""
         enabledColumnTestIDs: []
@@ -96,4 +96,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: c9d2541d06a3c71a72e659d0e5f39b7d526a6ede4fa6d067206b94260ba3cfaa
+    stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702

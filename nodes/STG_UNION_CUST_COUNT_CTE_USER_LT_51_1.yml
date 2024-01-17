@@ -1,5 +1,5 @@
 steps:
-  STG_UNION_CUST_COUNT_CTE_USER_LT_51_1-8abf10c9f820c7463a57cafd96231fe59fcf208dba8884fab3ab3f52a62789d2:
+  STG_UNION_CUST_COUNT_CTE_USER_LT_51_1-ec21224567cff9157a1ee04939f2112be2e568726fb7c93e25ebd1156a7b8b85:
     operation:
       config:
         groupByAll: false
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 783832272ae2324d98f987e477d2390efa4b89f41e55c0190b8b12df791b9a90
-              stepCounter: 8abf10c9f820c7463a57cafd96231fe59fcf208dba8884fab3ab3f52a62789d2
+              columnCounter: abae04f92aa316b91de68d2392ca626008a51c9a699b9e37da2ccc1060446e53
+              stepCounter: ec21224567cff9157a1ee04939f2112be2e568726fb7c93e25ebd1156a7b8b85
             dataType: ""
             description: ""
             hashColumns: []
@@ -37,7 +37,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: None
-                    stepCounter: 27a0a7a5f5f98e17c769b566391959b73824cb6288953390f20741b5bce243a2
+                    stepCounter: 73efff940143a132ae2d8020e299b7d09b000e7e17479479133822931fdb2e15
                 transform: 'query1'
         enabledColumnTestIDs: []
         sourceMapping:
@@ -55,4 +55,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 8abf10c9f820c7463a57cafd96231fe59fcf208dba8884fab3ab3f52a62789d2
+    stepCounter: ec21224567cff9157a1ee04939f2112be2e568726fb7c93e25ebd1156a7b8b85

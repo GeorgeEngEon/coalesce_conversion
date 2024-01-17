@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS_BY_MONTH_CTE_FINAL_1-37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c:
+  STG_ORDERS_BY_MONTH_CTE_FINAL_1-900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73:
     operation:
       config:
         groupByAll: true
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 94611c2424a95a10b3fe50dff4f828f40445ae5ad6639675da408c8d3057ef58
-              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+              columnCounter: 6c52deb259a2d6f5a9f7f0fe45b9acbec6f55ba6e49e7b9572166ed83ee55a77
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
             dataType: ""
             description: ""
             hashColumns: []
@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e2d96470dd9cad6ea95a6f83ba2a96decdc1f3303d3d17b80c99519d001aa03b
-                    stepCounter: e1e23fd6c913f102675f937d7ad19b8e8801577159c6b8b72a16b37fa0a72052
+                  - columnCounter: 66f082ba1698a57605bdcc9ce6b515459254d48127f11657e02bcf20192be626
+                    stepCounter: 999474c3ba5fb9ed966da017141660f6e45aa288b7d07a02b5deccf4ffc0843d
                 transform: sum(case when month(user_amount.first_order_date) >= 2 then user_amount.total_amount else 0 end)
           - acceptedValues:
               strictMatch: true
@@ -46,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 10935db703770600b238a7b779bee07839c97c7f0452852e206385f10a7611d6
-              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+              columnCounter: 261dc94779666134f4600a76553f8a9326ba5f77cc9f07fa53ddc3ac4d5f2ce1
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
             dataType: ""
             description: ""
             hashColumns: []
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: e2d96470dd9cad6ea95a6f83ba2a96decdc1f3303d3d17b80c99519d001aa03b
-                    stepCounter: e1e23fd6c913f102675f937d7ad19b8e8801577159c6b8b72a16b37fa0a72052
+                  - columnCounter: 66f082ba1698a57605bdcc9ce6b515459254d48127f11657e02bcf20192be626
+                    stepCounter: 999474c3ba5fb9ed966da017141660f6e45aa288b7d07a02b5deccf4ffc0843d
                 transform: sum(case when month(user_amount.first_order_date) < 2 then user_amount.total_amount else 0 end)
           - acceptedValues:
               strictMatch: true
@@ -66,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 185599cad5a545323c1892bff60a7b9d580095f69c5113fe2f03360d241e770b
-              stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+              columnCounter: 0f25a3525b1ebf69dab1314394e847cfa7b2c5c61eccc1d706af50bbb8b686f1
+              stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
             dataType: ""
             description: ""
             hashColumns: []
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 692478cedeea456ec17d1cf8fc23a2b3d8490cdfbb0df4718fb55d3537a5dff1
-                    stepCounter: e1e23fd6c913f102675f937d7ad19b8e8801577159c6b8b72a16b37fa0a72052
+                  - columnCounter: 0a8548d7f1e8866e3196a5b43e9c80172ca67145a5b39e8bc6fe162e0e43d575
+                    stepCounter: 999474c3ba5fb9ed966da017141660f6e45aa288b7d07a02b5deccf4ffc0843d
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
@@ -95,4 +95,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 37f365e8471103b41454fe4deb51208543f0799f5971289cffcd8f29d829162c
+    stepCounter: 900f1c219c29ca06452ecd3c419e8b90148e10415ece5b9a6beb8716b3ae8e73
