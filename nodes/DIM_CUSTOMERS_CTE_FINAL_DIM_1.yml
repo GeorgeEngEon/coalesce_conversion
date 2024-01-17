@@ -1,5 +1,5 @@
 steps:
-  DIM_CUSTOMERS_CTE_FINAL_DIM_1-43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a:
+  DIM_CUSTOMERS_CTE_FINAL_DIM_1-90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad:
     operation:
       config:
         groupByAll: false
@@ -14,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: DBT_GGITHIRI
+      locationName: GEORGE
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -26,8 +26,28 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 2e66b39c5fae2252beec37c72e322e6a86c81dc4bd3c0c21a55db356d5cd29cc
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: 1462632eaa0e1b1b90e1ae2d5019fff9e1a4d185f616aa72ac88fa45dc0e7749
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8d704154570c94dbb6ccef5d28aa98a3a240c25d6b2e0359abcca67707f3f578
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 8d9ba4d4f3026de51d2abcc066498207e84e054395f32386ffe46db8c18f35ff
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -36,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ceaf15955b6dfb4e658984558e698ab46e82d4dd4552387a62d3af0a60713fd3
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: 45d417a1ab563d80c3bd7adde8119ea23ddaee223eb784681f97cc08e023c201
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -46,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: c5f7c45f59da32088400e31fb39c10381cbce28c60c25b6de886e21e2657db9b
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: efab8b81e3e5919df0c4fd53bafe5e9d163b6b376c9ac772990936d9fe61006c
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -56,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 76fad5989f0cc6a39d37cb6c41c02b4041134eb354a897dec4c70119116325e4
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -66,8 +86,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 3950b51fc351b1c2c377191dd95f3bfe87b428c8fce9f14da887b8b336c9bff9
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: 895854e2c00c4953dfedb9367c0143bc7d6d4233108a4557da7bf9c9ce045630
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -76,8 +96,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ceaf15955b6dfb4e658984558e698ab46e82d4dd4552387a62d3af0a60713fd3
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: 355a196dc3305a305364691c89b168fd3013dac4934c65bfd46a6566ce1ca561
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -86,8 +106,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: a1587e567d275d5fc584e6b0922d0ec50a1b42b059446473b41303aff36e8266
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: e23f10c5d264b23a746fc71ba2c4acbed469fe603522e56a14fed7f9644d9816
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -96,8 +116,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ceaf15955b6dfb4e658984558e698ab46e82d4dd4552387a62d3af0a60713fd3
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -106,8 +126,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: e01acb3a6df116860a27799f165b7c5c749560e281b04d826f1c0533a2fd8490
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: eb2a8b0acf1f0c1784daba3de17213c0469524f3fb755ab8e3c2269eae1b189c
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -116,8 +136,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2fb73f7452a92f74fabaf7d03771914952c74d0f6b5ec24a632320293cd42aaa
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -126,8 +146,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 99845b3dbae4b3be368f670eaae233106da15326af0d930e757136ba1189da14
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+              columnCounter: 2af31a86b83ff8021ed5109f7b89f6c9a0fbcaa65414c121f839242b8d30e626
+              stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad
             dataType: ""
             description: ""
             hashColumns: []
@@ -136,38 +156,18 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: c5baf0bd3512189fa0d0ae79c4c9bee59cf44b1a8e4fd497da27fc444deb4c15
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
-                transform: ""
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests:
-              hasNull: true
-              isDistinct: false
-            columnReference:
-              columnCounter: 43423ce11777a24451d1b91d7271048bd796c4a49582f914169b09306ae3166d
-              stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
-            dataType: ""
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: USER_ID
-            nullable: false
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: fa7f2ff18ec71d8361a3576121abf3aab480b265891248a5ddcd37c80a132b32
-                    stepCounter: 125deebcfdcbc08721490e1243553f3e7c3c1b2d26f3e55a2e6781edba36337f
+                  - columnCounter: None
+                    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: DBT_GGITHIRI
-                nodeName: DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1
+              - locationName: GEORGE
+                nodeName: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1"
+                joinCondition: FROM {{ ref('GEORGE', 'DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1"
             name: DIM_CUSTOMERS_CTE_FINAL_DIM_1
             noLinkRefs: []
       name: DIM_CUSTOMERS_CTE_FINAL_DIM_1
@@ -175,4 +175,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 43c7a4aeb6c53d4d4105321b0202a54e5085205293f92bbdad3774e2ae51517a
+    stepCounter: 90905adc950f5ac0a579d9a8e2c76811fee6d26b5fe0e9bc595bb6b8721513ad

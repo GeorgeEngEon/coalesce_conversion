@@ -1,5 +1,5 @@
 steps:
-  FCT_ORDERS_CTE_ORDERS_FCT_1-7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973:
+  FCT_ORDERS_CTE_ORDERS_FCT_1-7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05:
     operation:
       config:
         groupByAll: false
@@ -14,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: DBT_GGITHIRI
+      locationName: GEORGE
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 8c3effb2a892ad2da98b310a47cfffbb73e60391800716ba1ade2196a26c1447
-              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+              columnCounter: 429b852da027bb551750c67e5511b7ecd282925672641016fc3c29169c4da3bf
+              stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
             dataType: ""
             description: ""
             hashColumns: []
@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: a5b70ab3e2bea8a7a61b0fdffe94647a4e3e24b2f463f30fb74a0d13e42a64ca
-                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                  - columnCounter: eef5d31d39b1aee1898daaa70176d1605db59a8bd01d98214bbc95d46fade5b3
+                    stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -46,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 3b2f176c13ce65f02891239d31057d7406e0693424a20c73f1ee9431b553b52b
-              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+              columnCounter: 68606f6bd59edfcd417100e57e1c1a36ec132d63190423090f803f967689d7a3
+              stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
             dataType: ""
             description: ""
             hashColumns: []
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 8a6eaacca32f1fe0cad3acf820372d17e2cdfd3e5a3beef807af0bc05e5a2d9f
-                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                  - columnCounter: 2af47fb1c29f02331cfc65e0bf1eea21af344043900bbf42a7ecdbfcdb4480eb
+                    stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -66,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 3bd44d43c02e93c4fdc9d6d8d2493317830e8ea0691002897f523fc7347970e2
-              stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+              columnCounter: 39834e6772886add64eaf564b520b3caa348c8d8532921d701888e7cd20e8727
+              stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
             dataType: ""
             description: ""
             hashColumns: []
@@ -76,20 +76,20 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 0b1b71fc9f3ccc6d0f1a4516c746d13635eb1f754b40be45922749f53241e149
-                    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+                  - columnCounter: 9d59addd16d8297a54226a7bbd8d50d9aabc0a0e629684b5d69348482416fd89
+                    stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: DBT_GGITHIRI
+              - locationName: GEORGE
                 nodeName: STG_ORDERS
             join:
                 joinCondition: |-
-                  FROM {{ ref('DBT_GGITHIRI', 'STG_ORDERS') }} "STG_ORDERS"
-                  LEFT JOIN {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1" 
+                  FROM {{ ref('GEORGE', 'STG_ORDERS') }} "STG_ORDERS"
+                  LEFT JOIN {{ ref('GEORGE', 'FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1" 
                   ON "FCT_ORDERS_CTE_ORDERS_FCT_1"."ORDER_ID" = "FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1"."ORDER_ID"
             name: FCT_ORDERS_CTE_ORDERS_FCT_1
             noLinkRefs: []
@@ -98,4 +98,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 7f41802df98d9139f1b91a45161b8984846fb1065419242a9d25dab5bde03973
+    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05

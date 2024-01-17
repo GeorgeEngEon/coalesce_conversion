@@ -1,5 +1,5 @@
 steps:
-  FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1-88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce:
+  FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1-8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed:
     operation:
       config:
         groupByAll: false
@@ -14,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: DBT_GGITHIRI
+      locationName: GEORGE
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 340b3761e779e06135d0379cca8cde857b16cda9aff40c4b2433a597b9b42b37
-              stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+              columnCounter: 020a34765d1786a401b928e1ef7ad5a28585d0129bcf7925dcf75c9d123153e0
+              stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed
             dataType: ""
             description: ""
             hashColumns: []
@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 07bb2399bbc20f8140e428c4bc3373f23c75c27f2acdcf09903c3b69821c8bda
-                    stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425
+                  - columnCounter: 68606f6bd59edfcd417100e57e1c1a36ec132d63190423090f803f967689d7a3
+                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
                 transform: sum(case when status = 'success' then amount end)
           - acceptedValues:
               strictMatch: true
@@ -46,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 58accf71a59a776728f33654ee83ef03a871503822e436c94ba9a16ea7fb4b00
-              stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+              columnCounter: dd34257275eb20813038b01075f83b043b0c56e73be29d603f783218597b350b
+              stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed
             dataType: ""
             description: ""
             hashColumns: []
@@ -56,18 +56,18 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 1166c2b4f81a8924dd9be7a2897277daf18eb6bd560cea021918ca7c1ea84566
-                    stepCounter: df103d3040977d0fe8dd28d6d39aa5a29a32b02aca4ea29653f541507c83c425
+                  - columnCounter: 39834e6772886add64eaf564b520b3caa348c8d8532921d701888e7cd20e8727
+                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: DBT_GGITHIRI
-                nodeName: FCT_ORDERS_CTE_PAYMENTS_FCT_1
+              - locationName: GEORGE
+                nodeName: FCT_ORDERS_CTE_ORDERS_FCT_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'FCT_ORDERS_CTE_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_PAYMENTS_FCT_1"
+                joinCondition: FROM {{ ref('GEORGE', 'FCT_ORDERS_CTE_ORDERS_FCT_1') }} "FCT_ORDERS_CTE_ORDERS_FCT_1"
             name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
             noLinkRefs: []
       name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
@@ -75,4 +75,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 88a9afdf69807cd7a46dd5b87bde2cc1a38a5687c9baf5a98f83c94c301a8dce
+    stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed

@@ -1,5 +1,5 @@
 steps:
-  STG_ORDERS-575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda:
+  STG_ORDERS-067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b:
     operation:
       config:
         groupByAll: false
@@ -14,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: DBT_GGITHIRI
+      locationName: GEORGE
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -26,8 +26,8 @@ steps:
               hasNull: false
               isDistinct: true
             columnReference:
-              columnCounter: a5b70ab3e2bea8a7a61b0fdffe94647a4e3e24b2f463f30fb74a0d13e42a64ca
-              stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+              columnCounter: eef5d31d39b1aee1898daaa70176d1605db59a8bd01d98214bbc95d46fade5b3
+              stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -46,8 +46,8 @@ steps:
               hasNull: false
               isDistinct: true
             columnReference:
-              columnCounter: 0b1b71fc9f3ccc6d0f1a4516c746d13635eb1f754b40be45922749f53241e149
-              stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+              columnCounter: 9d59addd16d8297a54226a7bbd8d50d9aabc0a0e629684b5d69348482416fd89
+              stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
             dataType: NUMBER
             description: ""
             hashColumns: []
@@ -66,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 88dc4d3f9ff9297ff2527370bc52fe4f9cde12f5c46155e1c9fac32020d558f1
-              stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+              columnCounter: eab35fe0bbcfa29c6f864233e53eccb07aec61bb9930b0edfd2615a9beac8c76
+              stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
             dataType: TEXT
             description: ""
             hashColumns: []
@@ -86,8 +86,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 8a6eaacca32f1fe0cad3acf820372d17e2cdfd3e5a3beef807af0bc05e5a2d9f
-              stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+              columnCounter: 2af47fb1c29f02331cfc65e0bf1eea21af344043900bbf42a7ecdbfcdb4480eb
+              stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b
             dataType: DATE
             description: ""
             hashColumns: []
@@ -116,4 +116,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 575f9efb72069040efb7e856b628784d863b01c06d3ab7ce8933e157f0678bda
+    stepCounter: 067c2f0ed5a4df97155a48ab031195849b3b5b5c5ccdf375ff92d222c703085b

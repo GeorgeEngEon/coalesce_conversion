@@ -1,5 +1,5 @@
 steps:
-  INT_ORDERS_PIVOTED_CTE_FINAL_1-3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d:
+  INT_ORDERS_PIVOTED_CTE_FINAL_1-b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b:
     operation:
       config:
         groupByAll: false
@@ -14,7 +14,7 @@ steps:
       description: ""
       isDataVault: false
       isMultisource: true
-      locationName: DBT_GGITHIRI
+      locationName: GEORGE
       materializationType: view
       metadata:
         appliedNodeTests: []
@@ -26,8 +26,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: cd6eedb5ad321026b9dd8baff68bb34d40d8c2f78a15e4961e7cbc5ee8d8d770
-              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+              columnCounter: e3fe6d36a320007b3219ac0bd067568b04404a65075c7ad80884555950789d71
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
             dataType: ""
             description: ""
             hashColumns: []
@@ -36,8 +36,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
                 transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -46,8 +46,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 00d6951a6bcbaca73a7e15715a4601f23fafc9cce6d88c34860d00d3ae8fc47c
-              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+              columnCounter: 39bf01b2daa9f956514684dd3ba2b437cff137f31a6548e15e2a507efa2f3a1e
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
             dataType: ""
             description: ""
             hashColumns: []
@@ -56,8 +56,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
                 transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -66,8 +66,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 6fbae01b20b25bc6cbc53ae9a4d9d1c2b143fc13bc1f4b11ba396912b5fdfb07
-              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+              columnCounter: 5069ddbd5d5ab442e71e746d8b71463c741aa71ceac82ef1a550fd604ac8df35
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
             dataType: ""
             description: ""
             hashColumns: []
@@ -76,8 +76,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
                 transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -86,8 +86,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: e8b687d50d4620f85125c9ecbaf9fe547ce1ffc28a559fc5242f26c8457849e8
-              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+              columnCounter: 839a84cb182693c2494697243884b70333bf2a8d6a816d9e3cddbd6fc297f76e
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
             dataType: ""
             description: ""
             hashColumns: []
@@ -96,8 +96,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
                 transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
@@ -106,8 +106,8 @@ steps:
               hasNull: true
               isDistinct: false
             columnReference:
-              columnCounter: 82f058a9ba75df6a1464aaa755b739f97a435cfb69e8399137583ad9ce26f805
-              stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+              columnCounter: 25c1e1acd025b793c427235ee1699c266bc2496a275216ca5910cddf2b43d6aa
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
             dataType: ""
             description: ""
             hashColumns: []
@@ -116,18 +116,18 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6e989291a7937085691a941c8c67f543d7861bc994a5f3dea14a5087b3f6876c
-                    stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
+                  - columnCounter: b135672e09116f29afe2933bd0c387bc822d8016b46f81c47df2676cca69fdaa
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
                 transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
               customSQL: ""
             dependencies:
-              - locationName: DBT_GGITHIRI
+              - locationName: GEORGE
                 nodeName: INT_ORDERS_PIVOTED_CTE_PAYMENTS_1
             join:
-                joinCondition: FROM {{ ref('DBT_GGITHIRI', 'INT_ORDERS_PIVOTED_CTE_PAYMENTS_1') }} "INT_ORDERS_PIVOTED_CTE_PAYMENTS_1"
+                joinCondition: FROM {{ ref('GEORGE', 'INT_ORDERS_PIVOTED_CTE_PAYMENTS_1') }} "INT_ORDERS_PIVOTED_CTE_PAYMENTS_1"
             name: INT_ORDERS_PIVOTED_CTE_FINAL_1
             noLinkRefs: []
       name: INT_ORDERS_PIVOTED_CTE_FINAL_1
@@ -135,4 +135,4 @@ steps:
       schema: ""
       sqlType: Stage
       type: sql
-    stepCounter: 3bd8ebbf2d7a52ba42b9a910a058e46962e7135cd8e462c53a2cfe30e408a89d
+    stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
