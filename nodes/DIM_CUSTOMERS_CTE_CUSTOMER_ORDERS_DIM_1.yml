@@ -38,7 +38,7 @@ steps:
               - columnReferences:
                   - columnCounter: 43b28b5ed012258383f6f1924e0b6310391274e713d501ba64c4fc44d1846833
                     stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
-                transform: ""
+                transform: min(order_date)
           - acceptedValues:
               strictMatch: true
               values: []
@@ -58,7 +58,7 @@ steps:
               - columnReferences:
                   - columnCounter: 43b28b5ed012258383f6f1924e0b6310391274e713d501ba64c4fc44d1846833
                     stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
-                transform: ""
+                transform: sum(amount)
           - acceptedValues:
               strictMatch: true
               values: []
@@ -78,7 +78,7 @@ steps:
               - columnReferences:
                   - columnCounter: 43b28b5ed012258383f6f1924e0b6310391274e713d501ba64c4fc44d1846833
                     stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
-                transform: ""
+                transform: max(order_date)
           - acceptedValues:
               strictMatch: true
               values: []
@@ -98,7 +98,7 @@ steps:
               - columnReferences:
                   - columnCounter: 43b28b5ed012258383f6f1924e0b6310391274e713d501ba64c4fc44d1846833
                     stepCounter: c6cc23aaf32c81381ac3f2642cde74334c861eac0ac9911429a51b84d5adfd44
-                transform: ""
+                transform: count(order_id)
           - acceptedValues:
               strictMatch: true
               values: []

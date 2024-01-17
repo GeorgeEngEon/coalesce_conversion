@@ -38,7 +38,7 @@ steps:
               - columnReferences:
                   - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
-                transform: ""
+                transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -58,7 +58,7 @@ steps:
               - columnReferences:
                   - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
-                transform: ""
+                transform: sum( case when payment_method = 'coupon' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -78,7 +78,7 @@ steps:
               - columnReferences:
                   - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
-                transform: ""
+                transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
@@ -98,7 +98,7 @@ steps:
               - columnReferences:
                   - columnCounter: 2e7387cc0aac45df22cedd618a2da252bc151b1e7c72b7eb3cacb8ed4425fedb
                     stepCounter: 4f4825a1e2f185d2a088f44e93d8c94a36a1b544af4141a279d71e56f88a71a9
-                transform: ""
+                transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
           - acceptedValues:
               strictMatch: true
               values: []
