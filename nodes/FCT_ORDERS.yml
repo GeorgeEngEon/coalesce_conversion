@@ -1,0 +1,115 @@
+steps:
+  FCT_ORDERS-3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationName: GEORGE
+      materializationType: Table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: true
+            columnReference:
+              columnCounter: da8886e71ebf69fce91a631292113f9c1b1b15d15ab149f676024c0d2a5f249b
+              stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+            - columnReferences:
+              - columnCounter: ac1e43d769c0b8a7ee6f5241b217086c9e06ccedb5e6b52d469c8af59433a8ec
+                stepCounter: cec5be7464d4f725ffcb900b42dd88e48a377fe155eed736dc0b6eac480b413d
+              transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 603af462cf246207188c15122c2111536ae71c2bc14bb784bdfdf31736a0f555
+              stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+            - columnReferences:
+              - columnCounter: ac1e43d769c0b8a7ee6f5241b217086c9e06ccedb5e6b52d469c8af59433a8ec
+                stepCounter: cec5be7464d4f725ffcb900b42dd88e48a377fe155eed736dc0b6eac480b413d
+              transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dd7fa5a6ce856b2d02c4c9bc14ac7a39f681d6c1b77710aa6b355db3fb392287
+              stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+            - columnReferences:
+              - columnCounter: ac1e43d769c0b8a7ee6f5241b217086c9e06ccedb5e6b52d469c8af59433a8ec
+                stepCounter: cec5be7464d4f725ffcb900b42dd88e48a377fe155eed736dc0b6eac480b413d
+              transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 93924110bd24192e4c0a7076f671a1235cffcf07593ed4c5aedf0eb2fdfd29c2
+              stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+            - columnReferences:
+              - columnCounter: ac1e43d769c0b8a7ee6f5241b217086c9e06ccedb5e6b52d469c8af59433a8ec
+                stepCounter: cec5be7464d4f725ffcb900b42dd88e48a377fe155eed736dc0b6eac480b413d
+              transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GEORGE
+                nodeName: FCT_ORDERS_CTE_FINAL_FCT_1
+            join:
+              joinCondition: FROM {{ ref('GEORGE', 'FCT_ORDERS_CTE_FINAL_FCT_1') }} "FCT_ORDERS_CTE_FINAL_FCT_1"
+              name: FCT_ORDERS
+              noLinkRefs: []
+      name: FCT_ORDERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 3996660bfc1545c9a8a6396bbdef83d56bc5e59a4040fff481617b8bf0057350

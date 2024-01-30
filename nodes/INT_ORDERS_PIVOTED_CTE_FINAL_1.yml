@@ -1,0 +1,138 @@
+steps:
+  INT_ORDERS_PIVOTED_CTE_FINAL_1-b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: GEORGE
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: e3fe6d36a320007b3219ac0bd067568b04404a65075c7ad80884555950789d71
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: BANK_TRANSFER_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
+                transform: sum( case when payment_method = 'bank_transfer' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 39bf01b2daa9f956514684dd3ba2b437cff137f31a6548e15e2a507efa2f3a1e
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUPON_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
+                transform: sum( case when payment_method = 'coupon' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 5069ddbd5d5ab442e71e746d8b71463c741aa71ceac82ef1a550fd604ac8df35
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CREDIT_CARD_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
+                transform: sum( case when payment_method = 'credit_card' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 839a84cb182693c2494697243884b70333bf2a8d6a816d9e3cddbd6fc297f76e
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GIFT_CARD_A
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d6222e515903060a9794e4ff06ccb10ca06d8b0a1ad66f325b2292127b38b3e7
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
+                transform: sum( case when payment_method = 'gift_card' then amount else 0 end )
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 25c1e1acd025b793c427235ee1699c266bc2496a275216ca5910cddf2b43d6aa
+              stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b135672e09116f29afe2933bd0c387bc822d8016b46f81c47df2676cca69fdaa
+                    stepCounter: 8d945eefb13250506153b65239418d76aa32ca490103c1d5f11cd240ff458953
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GEORGE
+                nodeName: INT_ORDERS_PIVOTED_CTE_PAYMENTS_1
+            join:
+                joinCondition: FROM {{ ref('GEORGE', 'INT_ORDERS_PIVOTED_CTE_PAYMENTS_1') }} "INT_ORDERS_PIVOTED_CTE_PAYMENTS_1"
+            name: INT_ORDERS_PIVOTED_CTE_FINAL_1
+            noLinkRefs: []
+      name: INT_ORDERS_PIVOTED_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: b15ebb1de1c4a3b7809562a105fd7d2c00a04415a226f786a607515a14a3c70b

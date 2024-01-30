@@ -1,0 +1,101 @@
+steps:
+  DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1-61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: GEORGE
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 45d417a1ab563d80c3bd7adde8119ea23ddaee223eb784681f97cc08e023c201
+              stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 19eb2433f723491c94dfe86dcbdf953f1bde0688edee935690f75a57c11c1de6
+                    stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 355a196dc3305a305364691c89b168fd3013dac4934c65bfd46a6566ce1ca561
+              stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1dfc6a61f13404640f76f788d63b0a32528d9eb48df0dcce3ea695fe9fc138f1
+                    stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 8d704154570c94dbb6ccef5d28aa98a3a240c25d6b2e0359abcca67707f3f578
+              stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 17c6b7408023b0969958e2b87e7127682860c40d4539c85a680a91798a9c711e
+                    stepCounter: d2e3b16dd518fc5a30ac4fe0227b092e053968697743a2d84210fcf060f9a611
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GEORGE
+                nodeName: STG_CUSTOMERS
+            join:
+                joinCondition: |-
+                  FROM {{ ref('GEORGE', 'STG_CUSTOMERS') }} "STG_CUSTOMERS"
+                  LEFT JOIN {{ ref('GEORGE', 'DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1') }} "DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1" 
+                  ON "DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1"."CUSTOMER_ID" = "DIM_CUSTOMERS_CTE_CUSTOMER_ORDERS_DIM_1"."CUSTOMER_ID"
+            name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
+            noLinkRefs: []
+      name: DIM_CUSTOMERS_CTE_CUSTOMERS_DIM_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 61daba71f703beede3c57d264b1def5ba71b5bd8224edd4c1ec9ab00d944e37d

@@ -1,0 +1,78 @@
+steps:
+  FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1-8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: GEORGE
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 020a34765d1786a401b928e1ef7ad5a28585d0129bcf7925dcf75c9d123153e0
+              stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 68606f6bd59edfcd417100e57e1c1a36ec132d63190423090f803f967689d7a3
+                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
+                transform: sum(case when status = 'success' then amount end)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: dd34257275eb20813038b01075f83b043b0c56e73be29d603f783218597b350b
+              stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 39834e6772886add64eaf564b520b3caa348c8d8532921d701888e7cd20e8727
+                    stepCounter: 7b3e2b2e800380a802efb6ac7fa6a24f83469315885b237f9fe3f41fa0417b05
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GEORGE
+                nodeName: FCT_ORDERS_CTE_PAYMENTS_FCT_1
+            join:
+                joinCondition: FROM {{ ref('GEORGE', 'FCT_ORDERS_CTE_PAYMENTS_FCT_1') }} "FCT_ORDERS_CTE_PAYMENTS_FCT_1"
+            name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
+            noLinkRefs: []
+      name: FCT_ORDERS_CTE_ORDER_PAYMENTS_FCT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 8ab83c91e2b15383e8fc7f974fd67425c8642e5a5da684f0db797a277b72e5ed
