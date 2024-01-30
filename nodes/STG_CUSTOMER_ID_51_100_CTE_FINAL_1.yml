@@ -1,0 +1,58 @@
+steps:
+  STG_CUSTOMER_ID_51_100_CTE_FINAL_1-760097e5843ae958a4f4b9008087503c708d286a78469c835c72f98663ec223c:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 2ee0f2e97dcca6e4728d34cbc0ed7559c721b7acd9ae3f005af0147528334e48
+              stepCounter: 760097e5843ae958a4f4b9008087503c708d286a78469c835c72f98663ec223c
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUST_ID_50_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: None
+                    stepCounter: 1356e85a185d6f5fe490c440002e526f92dbeb6a4595ee6b5394264a8f5c54cc
+                transform: count(user_count.customer_id)
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1') }} "STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1"
+            name: STG_CUSTOMER_ID_51_100_CTE_FINAL_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_51_100_CTE_FINAL_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 760097e5843ae958a4f4b9008087503c708d286a78469c835c72f98663ec223c

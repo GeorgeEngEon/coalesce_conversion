@@ -1,0 +1,58 @@
+steps:
+  STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1-1356e85a185d6f5fe490c440002e526f92dbeb6a4595ee6b5394264a8f5c54cc:
+    operation:
+      config:
+        groupByAll: false
+        insertStrategy: UNION
+        postSQL: ""
+        preSQL: ""
+        selectDistinct: false
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: BI
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 990ec321ea2f5ec14c6dafc4f59051afeff8eba703b253c5b463340b1015cf27
+              stepCounter: 1356e85a185d6f5fe490c440002e526f92dbeb6a4595ee6b5394264a8f5c54cc
+            dataType: ""
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSTOMER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 93e64ef5bdb034e1232fc67028421862ed790bb801f4c661b21ac18bfd56e2fe
+                    stepCounter: 84e02c78fd354a121974e00dc4906485c0431cc6a92b479cdaeb796cf2acf702
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: BI
+                nodeName: STG_ORDERS_BY_MONTH
+            join:
+                joinCondition: FROM {{ ref('BI', 'STG_ORDERS_BY_MONTH') }} "STG_ORDERS_BY_MONTH"
+            name: STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1
+            noLinkRefs: []
+      name: STG_CUSTOMER_ID_51_100_CTE_USER_COUNT_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: 1356e85a185d6f5fe490c440002e526f92dbeb6a4595ee6b5394264a8f5c54cc
